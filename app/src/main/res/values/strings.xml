@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GeoGame</string>
+    <string name="select_faction">Wybierz frakcję:</string>
 </resources>
