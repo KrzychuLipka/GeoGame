@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "151043285066",
+    "project_id": "geogame-47169",
+    "storage_bucket": "geogame-47169.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151043285066:android:e311f1df2069ec7f1786b3",
+        "android_client_info": {
+          "package_name": "pl.lipov.geogame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTaCEHuCg9yZs467pyGVIB6WaKQmmlHlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

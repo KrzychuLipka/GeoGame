@@ -56,7 +56,7 @@ fun MapScreen(
     mapView.BindLifecycle()
 
     Box(modifier = Modifier.fillMaxSize()) {
-        val target = viewModel.userFaction?.baseCoordinates
+        val target = viewModel.userPlayer?.baseCoordinates
         Map(mapView, target)
 
         StatusPanel(
@@ -76,8 +76,8 @@ fun StatusPanel(
     modifier: Modifier = Modifier,
     viewModel: MapViewModel
 ) {
-    val user = viewModel.userFaction
-    val enemy = viewModel.enemyFaction
+    val user = viewModel.userPlayer
+    val enemy = viewModel.enemyPlayer
     val round = viewModel.activeRound
 
     if (user == null || enemy == null) return
@@ -102,14 +102,14 @@ fun StatusPanel(
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 FactionStats(
-                    title = user.type.name.lowercase().replaceFirstChar { it.uppercase() },
+                    title = user.faction.name.lowercase().replaceFirstChar { it.uppercase() },
                     lives = user.lives,
                     resources = user.resources,
                     shieldsActive = user.shieldsActive
                 )
 
                 FactionStats(
-                    title = enemy.type.name.lowercase().replaceFirstChar { it.uppercase() },
+                    title = enemy.faction.name.lowercase().replaceFirstChar { it.uppercase() },
                     lives = enemy.lives,
                     resources = enemy.resources,
                     shieldsActive = enemy.shieldsActive
