@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">GeoGame</string>
     <string name="select_faction">Wybierz frakcję:</string>
+    <string name="attack_base">Atakuj bazę wroga</string>
+    <string name="destroy_resources">Zniszcz zasoby wroga</string>
+    <string name="strengthen_defenses">Wzmocnij obronę</string>
+    <string name="mine_gold">Wydobywaj złoto</string>
 </resources>
